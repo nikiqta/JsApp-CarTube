@@ -1,0 +1,15 @@
+<div id="container">
+{{> header}}
+<div id="car-listings">
+    <h1>Car Listings</h1>
+
+    <div id="listings">
+        {{#each cars}}
+            {{> car}}
+            {{else}}
+            <p class="no-cars">No cars in database.</p>
+        {{/each}}
+    </div>
+</div>
+{{> footer}}
+</div>
